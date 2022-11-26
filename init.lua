@@ -23,4 +23,15 @@ vim.api.nvim_set_keymap("n", "<c-j>", ":wincmd j<CR>", {silent=true})
 vim.api.nvim_set_keymap("n", "<c-h>", ":wincmd h<CR>", {silent=true})
 vim.api.nvim_set_keymap("n", "<c-l>", ":wincmd l<CR>", {silent=true})
 
+-- Auto-close
+-- 	Brackets	
+vim.api.nvim_set_keymap("i", "(", "()<left>", {noremap=true})
+vim.api.nvim_set_keymap("i", "[", "[]<left>", {noremap=true})
+vim.api.nvim_set_keymap("i", "{", "{}<left>", {noremap=true})
+
+-- 	Creating curly block with and without trailing comma
+vim.api.nvim_set_keymap("i", "{<CR>", "{<CR>}<ESC>O", {noremap=true})
+vim.api.nvim_set_keymap("i", "{;<CR>", "{<CR>};<ESC>O", {noremap=true})
+
+-- Silently open Fern drawer
 vim.api.nvim_set_keymap("n", "fn", ":Fern . -drawer -width=45 -toggle<CR>", {noremap=true, silent=true})
