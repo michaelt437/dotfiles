@@ -13,6 +13,7 @@ vim.cmd(
 	endif
 	]]
 )
+vim.cmd("colorscheme gruvbox")
 vim.cmd("hi normal guibg=none")
 
 -- Ctrl+key to navigate between panes
