@@ -16,10 +16,6 @@ vim.cmd(
 vim.cmd("colorscheme gruvbox")
 vim.cmd("hi normal guibg=none")
 
--- Theming
-vim.g.sonokai_style = "default"
-vim.g.airline_theme = "sonokai"
-
 -- Ctrl+key to navigate between panes
 vim.api.nvim_set_keymap("n", "<c-k>", ":wincmd k<CR>", {silent=true})
 vim.api.nvim_set_keymap("n", "<c-j>", ":wincmd j<CR>", {silent=true})
