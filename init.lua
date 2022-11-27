@@ -29,6 +29,15 @@ vim.api.nvim_set_keymap("i", "(", "()<left>", {noremap=true})
 vim.api.nvim_set_keymap("i", "[", "[]<left>", {noremap=true})
 vim.api.nvim_set_keymap("i", "{", "{}<left>", {noremap=true})
 
+-- 	Quotes
+vim.api.nvim_set_keymap("i", "\'", "\'\'<left>", {noremap=true})
+vim.api.nvim_set_keymap("i", "\"", "\"\"<left>", {noremap=true})
+
+-- 	Parentheses shortcuts
+vim.api.nvim_set_keymap("i", "(;", "();<ESC>hi", {noremap=true})
+vim.api.nvim_set_keymap("i", "(';", "('');<ESC>hhi", {noremap=true})
+vim.api.nvim_set_keymap("i", "(\";", "(\"\");<ESC>hhi", {noremap=true})
+
 -- 	Creating curly block with and without trailing comma
 vim.api.nvim_set_keymap("i", "{<CR>", "{<CR>}<ESC>O", {noremap=true})
 vim.api.nvim_set_keymap("i", "{;<CR>", "{<CR>};<ESC>O", {noremap=true})
