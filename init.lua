@@ -1,5 +1,6 @@
 require("plugins")
 require("lualine-config")
+require("lsp")
 
 vim.opt.number = true
 vim.opt.relativenumber = true

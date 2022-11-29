@@ -5,8 +5,8 @@ return require('packer').startup{
 		-- For use with Fern, for now
 		use "antoinemadec/FixCursorHold.nvim"
 
-		use {"tpope/vim-fugitive", branch = "master"}
 		use {"lambdalisue/fern.vim", branch = "main"}
+		use "neovim/nvim-lspconfig"
 		use {
 			"nvim-lualine/lualine.nvim",
 			requires = {
@@ -14,6 +14,7 @@ return require('packer').startup{
 				opt = true
 			}
 		}
+		use {"tpope/vim-fugitive", branch = "master"}
 
 		-- Themes
 		use "ayu-theme/ayu-vim"
